@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fragment xmlns="http://schemas.haulmont.com/cuba/screen/fragment.xsd">
+    <data>
+        <collection id="parametersDc" class="com.haulmont.addon.dashboard.model.Parameter">
+            <view extends="_local"/>
+            <loader id="parametersDl">
+                <query>
+                    <![CDATA[select e from dashboard$Parameter e]]>
+                </query>
+            </loader>
+        </collection>
+        <instance id="beanMethodModelDc" class="com.haulmont.addon.bproc.web.entities.model.BeanMethodModel">
+            <view extends="_local"/>
+            <loader>
+                <query>
+                    <![CDATA[select e from bproc_BeanMethodModel e]]>
+                </query>
+            </loader>
+        </instance>
+    </data>
+    <layout>
+    </layout>
+</fragment>
